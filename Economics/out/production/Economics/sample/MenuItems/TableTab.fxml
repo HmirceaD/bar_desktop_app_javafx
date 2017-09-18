@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuItems.MenuItemsController">
+   <children>
+      <TableView fx:id="tabTable" layoutX="36.0" layoutY="74.0" prefHeight="506.0" prefWidth="357.0">
+        <columns>
+          <TableColumn fx:id="nameTabTable" prefWidth="239.0" text="Name" />
+            <TableColumn fx:id="priceTabTable" prefWidth="117.0" text="Price" />
+        </columns>
+      </TableView>
+      <TableView fx:id="menuTable" layoutX="558.0" layoutY="74.0" prefHeight="506.0" prefWidth="357.0">
+         <columns>
+            <TableColumn fx:id="nameMenuTable" prefWidth="249.0" text="Name" />
+            <TableColumn fx:id="priceMenuTable" prefWidth="107.0" text="Price" />
+         </columns>
+      </TableView>
+      <Button fx:id="addButton" layoutX="418.0" layoutY="325.0" mnemonicParsing="false" onAction="#addToTab" prefHeight="31.0" prefWidth="108.0" text="Add to Tab" />
+      <ToolBar prefHeight="45.0" prefWidth="950.0">
+        <items>
+            <Region prefHeight="31.0" prefWidth="857.0" />
+        </items>
+      </ToolBar>
+      <Label alignment="CENTER" layoutX="609.0" layoutY="53.0" prefHeight="21.0" prefWidth="244.0" text="Menu" />
+      <Label alignment="CENTER" cache="true" layoutX="84.0" layoutY="53.0" prefHeight="21.0" prefWidth="244.0" text="Table Tab" />
+      <ToolBar layoutX="36.0" layoutY="580.0" prefHeight="31.0" prefWidth="357.0">
+         <items>
+            <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearAll" text="Clear" />
+            <Region prefHeight="31.0" prefWidth="102.0" />
+            <Button fx:id="delButton" mnemonicParsing="false" onAction="#delElements" text="Delete" />
+            <TextField fx:id="priceField" prefHeight="31.0" prefWidth="104.0" promptText="Price" />
+         </items>
+      </ToolBar>
+      <Label fx:id="label1" alignment="CENTER" layoutX="558.0" layoutY="603.0" prefHeight="21.0" prefWidth="313.0" />
+      <Label fx:id="label2" layoutX="36.0" layoutY="626.0" prefHeight="21.0" prefWidth="357.0" />
+   </children>
+</AnchorPane>

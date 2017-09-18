@@ -1,0 +1,12 @@
+.button-open{
+     -fx-background-color: #42f450;
+}
+
+.button-closed{
+     -fx-background-color: #FF0000;
+}
+
+.button-plain{
+    -fx-background-color: #FFFFFF;
+}
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainSelection.MenuChangeController">
+   <center>
+      <TableView fx:id="tableView1" fixedCellSize="0.0" maxHeight="505.0" maxWidth="640.0" minHeight="480.0" minWidth="640.0" prefHeight="505.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="448.0" text="Name" />
+            <TableColumn fx:id="priceColumn" prefWidth="176.0" text="Price" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <ToolBar BorderPane.alignment="CENTER">
+         <items>
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#addData" text="Insert" />
+            <Region prefHeight="31.0" prefWidth="0.0" />
+            <TextField fx:id="nameField" prefHeight="31.0" prefWidth="182.0" promptText="Insert Name of Product" />
+            <Region prefHeight="31.0" prefWidth="1.0" />
+            <TextField fx:id="priceField" prefHeight="31.0" prefWidth="98.0" promptText="RON" />
+            <Region prefWidth="59.0" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteData" text="Delete" />
+            <Region prefHeight="31.0" prefWidth="64.0" />
+            <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeWindow" text="Close" />
+         </items>
+      </ToolBar>
+   </bottom>
+</BorderPane>

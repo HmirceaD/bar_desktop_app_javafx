@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onDragDetected="#tabWindow" prefHeight="1000.0" prefWidth="1880.0" stylesheets="@tableCss.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.tablePreset1.preset1Controller">
+   <children>
+      <Button fx:id="button1" layoutX="607.0" layoutY="470.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" stylesheets="@tableCss.css" text="Table 1" />
+      <Button fx:id="button2" layoutX="746.0" layoutY="570.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 2" />
+      <Button fx:id="button11" layoutX="903.0" layoutY="218.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 11" />
+      <Button fx:id="button3" layoutX="776.0" layoutY="718.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 3" />
+      <Button fx:id="button4" layoutX="990.0" layoutY="600.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 4" />
+      <Button fx:id="button5" layoutX="1040.0" layoutY="718.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 5" />
+      <Button fx:id="button6" layoutX="1221.0" layoutY="668.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 6" />
+      <Button fx:id="button9" layoutX="975.0" layoutY="359.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 9" />
+      <Button fx:id="button10" layoutX="1099.0" layoutY="281.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 10" />
+      <Button fx:id="button8" layoutX="1099.0" layoutY="420.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 8" />
+      <Button fx:id="button12" layoutX="746.0" layoutY="331.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 12" />
+      <Button fx:id="button7" layoutX="1221.0" layoutY="500.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#tabWindow" styleClass="button-open" text="Table 7" />
+      <Button id="backB" fx:id="backButton" layoutX="904.0" layoutY="955.0" mnemonicParsing="false" onAction="#goBack" prefHeight="31.0" prefWidth="242.0" styleClass="button-plain" text="Go Back" />
+   </children>
+</AnchorPane>
